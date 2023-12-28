@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(38, 14, 124);
+    
+}
+.encabezado{
+    display: flex;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    height: 90px;
+    padding: 10px;
+    justify-content: center;
+    border-bottom: solid black 2px;
+    
+}
+
+.encabezado h1{
+    padding-right:15px;
+}
+
+.navSuperior{
+    padding-left: 20px;
+    background-color: rgb(92, 53, 53);
+    height: 25px;
+    
+}
+
+.navSuperior ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+
+.navSuperior li{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    color:wheat;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.cuerpo{
+    display: flex;
+    height: 700px;
+}
+
+.navLateral{
+    width: 15%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: beige;
+
+    background-color: rgb(41, 25, 25);
+    
+}
+
+.navLateral li{
+    margin: 10px;
+}
