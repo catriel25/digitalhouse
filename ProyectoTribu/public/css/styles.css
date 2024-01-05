@@ -3,6 +3,9 @@
 }
 
 header{
+
+    height: 115px;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     background-color: rgb(38, 14, 124);
@@ -52,7 +55,7 @@ header{
 }
 
 .cuerpo{
-    display: flex;
+
     height: 700px;
 }
 
@@ -69,4 +72,35 @@ header{
 
 .navLateral li{
     margin: 10px;
+}
+
+footer{
+    background-color: rgb(191, 191, 91);
+    height: 200px;
+}
+
+.contenedor{
+    display: flex;
+}
+
+
+.cuerpo{
+
+    background-color: aqua;
+}
+
+.barra-lateral{
+    background-color: blue;
+    width: 10%;
+    transition: all 450ms;
+
+}
+
+.barra-lateral:hover{
+    width: 20%;
+    background-color: brown;
+}
+
+.barra-lateral ul{
+    position: fixed;
 }
