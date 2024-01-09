@@ -89,14 +89,19 @@ div.burger-menu i{
 
 article div.main-article{
     width: 100%;
-    margin: 15px;
+    padding: 15px;
     border: 1px solid #ebebeb;
 }
 
 
 article div.main-article i{
+    
+    color: #39b54a;
     border: 1px solid #39b54a;
+    padding: 4px 17px 17px 4px;
+    font-size: 16px;
     border-radius: 50%;
+    
 }
 
 .price{

@@ -8,6 +8,10 @@ body {
 
 main{
     margin-top: 240px;
+    width: 90%;
+    align-items: center;
+    background-color: #ebebeb;
+    
 }
 
 .main-header{
@@ -17,6 +21,17 @@ main{
     top: 0;
     z-index: 100;
     width: 100%;
+}
+
+.articulo {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.articulo div{
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
 }
 
 .hamburger-button{
@@ -102,7 +117,7 @@ main{
     width: 400px;
 }
 
-.producto img{
+.img-productos{
     width: 100%;
 }
 .producto h2{
@@ -131,6 +146,9 @@ main{
 
 .secciones{
     font-size: 24px;
+x
+    align-items: center;
+    
 }
 
 .precio{
@@ -139,10 +157,13 @@ main{
 
 .descuentos{
     font-size: 16px;
+    color: #39b54a;
 }
 
 .nombre-producto{
     font-size: 16px;
+    color: #666;
+
 }
 
 footer article{
