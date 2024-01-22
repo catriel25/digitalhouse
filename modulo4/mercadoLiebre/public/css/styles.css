@@ -118,7 +118,6 @@ main section article img{
 }
 
 
-
 .main-article i{
     display: block;
     font-size: 16px;
@@ -132,6 +131,7 @@ main section article img{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition-duration: 1s;
 }
 
 .productos{
@@ -141,6 +141,7 @@ main section article img{
 
 .productos article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition-duration: 1s;
 }
 
 
@@ -178,6 +179,7 @@ p{
     font-weight: normal;
     display: none;
     color: #666;
+    transition-duration: 1s;
 }
 
 
@@ -279,13 +281,9 @@ footer{
 .main-login-form-buttons a{
     text-decoration: none;
     color: #ebebeb;
-    background-color: #0044AA;
 }
 
-.main-login-form-buttons button{
-    background-color: #0044AA;
-    border: none;
-}
+
 
 @media(min-width:767px){
     .header-top{
@@ -346,7 +344,7 @@ footer{
 }
 
 @media(min-width: 1200px){
-    .logo{
+   .logo{
         width: 280px;
     }
     .busqueda i{
@@ -368,6 +366,11 @@ footer{
     }
     .productos article{
         flex-basis: 20%;
+        box-shadow: none;
+    }
+
+    .productos article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .precio{
         font-size: 18px;
@@ -381,5 +384,32 @@ footer{
         width: 50%;
     
     }
+    .descripcion{
+        display:none;
+    }
+
+    .productos article:hover .descripcion{
+        display: block;
+    }
+    .productos article:hover i{
+        transform: rotateZ(-90deg);
+    }
+    .main-login-form-buttons:hover{
+        background-color: #0022AA;
+    }
+
+    .footer-style{
+        display: flex;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .footer-style i:hover{
+        color: rgb(95, 177, 84)
+    }
+
+
 
 }
