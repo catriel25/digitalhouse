@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <label for="">Ingrese su Nombre</label>
+        <input type="text" name="nombre" required>
+
+        <label for="">Colores</label>
+        <select name="colores" required>
+            <option value="" selected>Seleccione</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+        </select>
+
+        <label for="email">Ingrese su email</label>
+        <input type="text" name="email" required>
+
+        <label for="edad">Ingrese su edad</label>
+        <input type="number" name="edad">
+
+        <button type="submit">Enviar!</button>
+        
+    </form>
+    <% if ( ) { %>
+     
+    <% } %>
+
+    <% if (errors != null) { %>
+        <ul>
+            <% errors.forEach(function(error) { %>
+                <li><%= error.msg %></li>
+            <% }); %>
+        </ul>
+    <% }else{%>
+
+            <label for="">Mensaje</label>
+            <p>Hola <%= usuario.nombre %>, elegiste el color: <%= usuario.colores %>, tu email es : <%= usuario.email %>
+                <% if(usuario.edad){%>
+                    y tu edad es: <%= usuario.edad %>
+            <%} %></p>
+            
+
+    <% } %> 
+</body>
+</html>
